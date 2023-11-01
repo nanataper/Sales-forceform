@@ -1,0 +1,142 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <!-- <script src="https://www.google.com/recaptcha/api.js"></script>  -->
+        <!-- <script>  -->
+        <!--  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);   -->
+        <!-- </script>  -->
+  
+    <link rel="stylesheet"
+        href="https://static.prd.echannel.linde.com/wcsstore/LindeStorefrontAssetStore/css/Content-page-template-stylesheets-two.css">
+  
+  </head>
+  <h1 style="font-weight: 700;
+  text-align: center;
+  color: #00305c;
+  margin: 50px 0;">Be om råd</h1>
+  <p id="contact-form-heading" style="text-align: center; font-weight: 400; margin: auto; width: 60%; color: #00305c;">
+    <!-- <img
+    src="https://static.prd.echannel.linde.com/wcsstore/EE_REN_Industrial_Gas_Store/images/info-icon.png"
+    style="width: 40px" />  -->
+    Kontakta våra experter om du har frågor eller behöver råd om våra <span style="color: #00A0E1">gasrelaterade lösningar och applikationer.</p>
+  <div id="template-content-eight-widget-div" style="margin-bottom: 50px;">
+  
+    <div id="contact-form-div" style="margin: auto;">
+        <form id="contact-form-content-page" action="#" method="POST" onsubmit="handleSubmit()">
+            <input type=hidden name="oid" value="00D57000000ri73">
+            <input type=hidden name="retURL" value="https://www.linde-gas.se/shop/sv/se-ig/skicka-in">
+            <div class="firstRow">
+    
+                <div class="name_column">
+                    <label for="first_name">Namn*</label><br>
+                    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  required/><br>
+                </div>
+    
+                <div class="last_nameColumn" style="margin-left: 10px;">
+                    <label for="last_name">Efternamn*</label><br>
+                    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required/><br>
+                </div>
+    
+    
+            </div>
+            <br>
+            <div class="secondRow">
+                <div class="company_column">
+                    <label for="company">Företag</label><br>
+                    <input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+                </div>
+    
+                <div class="customer_column" style="margin-left: 10px;">
+                    <label for="customer_number" id="customerNumber">Kundnummer, om du känner till det</label><br>
+                    <input id="customer_number" name="customer_number" type="text" maxlength="7"><br>
+                </div>
+    
+    
+    
+            </div><br>
+    
+            <div class="thirdRow">
+    
+    
+                <div class="telephone_column">
+                    <label for="telephone">Telefonnummer*</label><br>
+                    <input  id="telephone" type="text" maxlength="8" name="telephone" required/><br> 
+                </div>
+    
+                <div class="email_column" style="margin-left: 10px;">
+                    <label for="email">E-post*</label><br>
+                    <input  id="email" maxlength="80" name="email" size="20" type="text"/><br>                
+                </div>
+    
+            </div>
+            </br>
+    
+            <div class="segmentDiv">
+                <label for="industry">Intresseområde</label><br>
+                <select  id="industry" name="industry">
+                    <option value="">--None--</option><option value="Chemistry &amp; Energy">Kemi &amp; energi</option>
+                    <option value="Food &amp; Beverage">Livsmedel &amp; dryck</option>
+                    <option value="Metallurgy &amp; Glass">Matellurgi &amp; glas</option>
+                    <option value="Manufacturing">Tillverkning</option>
+                    <option value="Healthcare">Hälso &amp; sjukvård</option>
+                    <option value="Electronics">Elektronik</option>
+                    <option value="Government" hidden>Government</option>
+                    <option value="Gases Reselling" hidden>Gases Reselling</option>
+                    <option value="SME" hidden>SME</option>
+                    <option value="Water">Vatten</option>
+                    <option value="Hydrogen Mobility">Mobilitet med vätgas</option>
+                    <option value="SRA" hidden>SRA</option>
+                    <option value="Inter-company" hidden>Inter-company</option>
+                    <option value="Intra-company" hidden>Intra-company</option>
+                    <option value="Aviation" hidden>Aviation</option>
+                    <option value="Energy">Energi</option>
+                    <option value="Industrial">Industriell</option>
+                    <option value="Others">Övriga</option>
+  
+    
+                </select>
+            </div>
+            <br>
+            <div class="DescriptionForCustomer">
+                <label for="DescriptionForCustomer" id="DescriptionForCustomerLabel">Beskriv ditt intresse*</label><br>
+                <textarea type="text" id="DescriptionForCustomer" name="DescriptionForCustomer" cols="40" rows="3"
+                    style="border: 1px solid #DEE3EB;" required></textarea><br>
+            </div>
+  
+            <label for="country" hidden>Country</label><input id="country" name="country" maxlength="40" size="20" type="text" value="SE" hidden>
+            <label for="lead_source" hidden>Lead Source</label><input id="lead_source" name="lead_source" maxlength="40" size="20" type="text" value="Web" hidden>
+  
+            <div hidden id="this-window">
+            </div>
+            <div hidden>
+                <label for="description" id="descriptionLabel">Message</label><br>
+                <input name="description" id="description" value=""></input>
+            </div>
+            <!-- <div id="checkbox-div">
+                <input type="checkbox" id="safety-check" name="terms" value="false" required>
+            </div> -->
+            <div class="g-recaptcha" data-sitekey="6Lcek8QaAAAAAObKnDhh_JoTbKij3EmADqxClyQQ"></div><br>
+            <div class="submitForm">
+                <input type="submit" value="Skicka en förfrågan" id="submitButton-content-page" name="submit">
+            </div>
+        </form>
+    </div>
+    </div>
+  
+    <script>
+        function handleSubmit() {
+                let thisWindow = document.getElementById("this-window").innerHTML = window.location.href;
+                let DescriptionForCustomer = document.getElementById("DescriptionForCustomer");
+                // let segment = document.getElementById("Segment");
+                let customerNumber = document.getElementById('customer_number');
+                let hiddenDesc = document.getElementById('description');
+                hiddenDesc.value = DescriptionForCustomer.value + ".\n Customer number: " + customerNumber.value + "\n This form is coming from URL: " + thisWindow;
+  
+                return true;
+  
+        }
+    </script>
+ 
+
+ 
+ 
